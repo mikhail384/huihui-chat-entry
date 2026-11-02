@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Huihui Chat</title>
+  <style>
+    html, body { width: 100%; height: 100%; margin: 0; background: #101116; color: #ececf2; font-family: system-ui, sans-serif; }
+    iframe { position: fixed; inset: 0; width: 100%; height: 100%; height: 100dvh; border: 0; background: #101116; }
+    #loading { z-index: 1; position: fixed; inset: 0; display: grid; place-content: center; gap: 1rem; text-align: center; padding: 1rem; }
+    #loading[hidden] { display: none; }
+    a { color: #b9c5ff; }
+  </style>
+</head>
+<body>
+  <div id="loading" role="status">Открываем Huihui Chat…<br><a href="https://huihuichat.xyz:8444/">Открыть напрямую</a></div>
+  <iframe id="chat" title="Huihui Chat" src="https://huihuichat.xyz:8444/" allow="clipboard-read; clipboard-write; microphone; camera; fullscreen" allowfullscreen></iframe>
+  <script>document.getElementById('chat').addEventListener('load', function () { document.getElementById('loading').hidden = true; });</script>
+  <noscript><p><a href="https://huihuichat.xyz:8444/">Открыть Huihui Chat напрямую</a></p></noscript>
+</body>
+</html>
+
+
